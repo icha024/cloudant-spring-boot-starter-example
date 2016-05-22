@@ -15,8 +15,14 @@
   ```
 4. Then check the data in your Cloudant account, it should save your pet data to a DB instance called 'myDB'
 
-### Runing with local CouchDB
-1. If you are running CouchDB locally, you can just fire up the 'local' SpringBoot profile:
+### Running with local CouchDB
+You may want to use a local CouchDB instance instead, the easiest way to do this is to use Docker
+```
+docker run -d -p 5984:5984 --name couchdb klaemo/couchdb
+```
+(See [CouchDB Docker guide](https://hub.docker.com/r/klaemo/couchdb/))
+
+1. Once you have CouchDB running locally, you can just fire up the 'local' SpringBoot profile:
   ```
   mvn spring-boot:run
   ```
