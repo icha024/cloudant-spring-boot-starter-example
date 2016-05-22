@@ -1,4 +1,5 @@
 # Example for using Cloudant with Spring-Boot-Starter
+[![Build Status](https://travis-ci.org/icha024/cloudant-spring-boot-starter-example.svg?branch=master)](https://travis-ci.org/icha024/cloudant-spring-boot-starter-example)
 
 ### Running with Cloudant
 1. Place your Cloudant credential in the property file:
