@@ -1,6 +1,6 @@
 package com.example.web;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Pet {
 
@@ -9,7 +9,7 @@ public class Pet {
 	}
 
 	private String name;
-	private String date = LocalDateTime.now().toString();
+	private String date = new Date().toString();
 
 	public String getDate() {
 		return date;
