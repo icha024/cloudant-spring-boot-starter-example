@@ -11,9 +11,7 @@
   mvn spring-boot:run
   ```
 3. Saving data to DB but hitting the URL:
-  ```
   http://localhost:8080/save
-  ```
 4. Then check the data in your Cloudant account, it should save your pet data to a DB instance called 'myDB'
 
 ### Running with local CouchDB
@@ -27,11 +25,7 @@ docker run -ti --rm -p 5984:5984 klaemo/couchdb
   ```
   mvn spring-boot:run -Dspring.profiles.active=local
   ```
-2. Saving data to DB by hitting the URL:
-  ```
+2. Saving data to DB by hitting the URL: 
   http://localhost:8080/save
-  ```
 3. Check your CouchDB instance for the saved data, this is available at:
-  ```
   http://localhost:5984/_utils/database.html?mydb
-  ```
