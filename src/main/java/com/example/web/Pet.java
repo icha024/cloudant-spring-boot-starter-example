@@ -1,4 +1,4 @@
-package com.clianz.web;
+package com.example.web;
 
 import java.time.LocalDateTime;
 
