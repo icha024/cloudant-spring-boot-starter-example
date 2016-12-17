@@ -1,4 +1,4 @@
-package com.clianz;
+package com.example;
 
 import com.cloudant.client.api.CloudantClient;
 import com.cloudant.client.api.Database;
