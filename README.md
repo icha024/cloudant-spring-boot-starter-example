@@ -19,15 +19,15 @@
 ### Running with local CouchDB
 You may want to use a local CouchDB instance instead, the easiest way to do this is to use Docker
 ```
-docker run -d -p 5984:5984 --name couchdb klaemo/couchdb
+docker run -ti --rm -p 5984:5984 klaemo/couchdb
 ```
 (See [CouchDB Docker guide](https://hub.docker.com/r/klaemo/couchdb/))
 
 1. Once you have CouchDB running locally, you can just fire up the 'local' SpringBoot profile:
   ```
-  mvn spring-boot:run
+  mvn spring-boot:run -Dspring.profiles.active=local
   ```
-2. Saving data to DB but hitting the URL:
+2. Saving data to DB by hitting the URL:
   ```
   http://localhost:8080/save
   ```
